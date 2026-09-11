@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for XAPK Installer by DIY Apps Studio">
+  <meta name="theme-color" content="#0d1215">
+  <title>Privacy Policy | XAPK Installer</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --page: #f4f7f5;
+      --surface: #ffffff;
+      --ink: #17211d;
+      --muted: #5a6961;
+      --line: #d9e3dd;
+      --brand: #08754f;
+      --brand-soft: #e7f7ee;
+      --focus: #0047ab;
+      --shadow: 0 18px 50px rgb(20 44 32 / 8%);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.68;
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration-thickness: 0.09em;
+      text-underline-offset: 0.16em;
+    }
+
+    a:hover { text-decoration-thickness: 0.14em; }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -64px;
+      z-index: 2;
+      padding: 9px 13px;
+      background: var(--surface);
+      color: var(--ink);
+      border-radius: 8px;
+    }
+
+    .skip-link:focus { top: 12px; }
+    .shell { max-width: 960px; margin: 0 auto; padding: 24px; }
+
+    header {
+      padding: 56px 0 32px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 14px;
+      color: var(--brand);
+      font-size: 0.8rem;
+      font-weight: 760;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 9px;
+      height: 9px;
+      content: "";
+      background: #58c98d;
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px var(--brand-soft);
+    }
+
+    h1, h2, h3 { color: var(--ink); line-height: 1.18; }
+
+    h1 {
+      max-width: 14ch;
+      margin: 0;
+      font-size: clamp(2.35rem, 7vw, 4.4rem);
+      letter-spacing: -0.055em;
+    }
+
+    .lead {
+      max-width: 62ch;
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2.5vw, 1.22rem);
+    }
+
+    .updated {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      padding: 22px 0 2px;
+      font-size: 0.92rem;
+    }
+
+    nav a { color: var(--muted); }
+    main { padding: 34px 0 56px; }
+
+    .notice {
+      margin: 0 0 36px;
+      padding: 20px 22px;
+      border: 1px solid #b8dfc9;
+      border-radius: 16px;
+      background: var(--brand-soft);
+    }
+
+    .notice strong { color: #075a3d; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin: 0 0 42px;
+    }
+
+    .card {
+      min-height: 168px;
+      padding: 21px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .card h2 { margin: 0 0 8px; font-size: 1.06rem; }
+    .card p { margin: 0; color: var(--muted); font-size: 0.94rem; }
+
+    section {
+      max-width: 760px;
+      padding: 8px 0 20px;
+      scroll-margin-top: 20px;
+    }
+
+    section + section { margin-top: 18px; }
+
+    h2 {
+      margin: 0 0 13px;
+      font-size: clamp(1.38rem, 3vw, 1.8rem);
+      letter-spacing: -0.028em;
+    }
+
+    p, li { max-width: 75ch; }
+    p { margin: 0 0 15px; }
+    ul { margin: 0 0 15px; padding-left: 1.2rem; }
+    li + li { margin-top: 6px; }
+
+    .table-wrap {
+      margin: 20px 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--surface);
+    }
+
+    table {
+      width: 100%;
+      min-width: 650px;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      padding: 15px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #eef7f1;
+      color: #184b35;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+    .fine-print { color: var(--muted); font-size: 0.91rem; }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 24px 0 40px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 680px) {
+      .shell { padding: 18px; }
+      header { padding-top: 38px; }
+      .grid { grid-template-columns: 1fr; }
+      footer { display: block; }
+      footer p + p { margin-top: 8px; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page: #0d1215;
+        --surface: #151d20;
+        --ink: #edf7f1;
+        --muted: #b3c2ba;
+        --line: #2b3a35;
+        --brand: #75e0ab;
+        --brand-soft: #123a29;
+        --focus: #83b9ff;
+        --shadow: none;
+      }
+
+      .notice { border-color: #286b4a; }
+      .notice strong { color: #a3f0c4; }
+      th { background: #112b20; color: #bff2d1; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#policy">Skip to privacy policy</a>
+  <div class="shell">
+    <header>
+      <p class="eyebrow">XAPK Installer</p>
+      <h1>Privacy Policy</h1>
+      <p class="lead">This policy explains how DIY Apps Studio handles information when you use XAPK Installer to select package files, install apps, and view advertising.</p>
+      <p class="updated">Last updated: September 11, 2026</p>
+      <nav aria-label="Policy sections">
+        <a href="#data">Data at a glance</a>
+        <a href="#files">Files and installation</a>
+        <a href="#ads">Advertising</a>
+        <a href="#choices">Your choices</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="policy">
+      <div class="notice">
+        <strong>Short version:</strong> XAPK Installer processes package files on your device. We do not operate an account system or upload your package contents, filenames, or installation history to a DIY Apps Studio server. The app uses Google AdMob and Google User Messaging Platform (UMP), which may process data for advertising and consent management as described below.
+      </div>
+
+      <div class="grid" aria-label="Privacy summary">
+        <article class="card">
+          <h2>Package files stay local</h2>
+          <p>Selected APK, XAPK, APKM, APKS and supported OBB data are processed locally to prepare an Android installation.</p>
+        </article>
+        <article class="card">
+          <h2>No account required</h2>
+          <p>We do not provide a DIY Apps Studio account, cloud sync, or a custom analytics service in the app.</p>
+        </article>
+        <article class="card">
+          <h2>Ads use Google services</h2>
+          <p>Google AdMob and UMP may process identifiers, IP address, interaction and diagnostic data for ads, measurement, fraud prevention and consent.</p>
+        </article>
+      </div>
+
+      <section id="data">
+        <h2>1. Data at a glance</h2>
+        <p>We process information only for the functions described in this policy. The following table distinguishes the app's local processing from processing by Google advertising services.</p>
+        <div class="table-wrap" role="region" aria-label="Data practices table" tabindex="0">
+          <table>
+            <thead>
+              <tr>
+                <th>Information</th>
+                <th>Why it is used</th>
+                <th>Where it is handled</th>
+                <th>Retention and sharing</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Package files, package metadata, signatures and file hashes</td>
+                <td>To inspect a package, select compatible components, prepare installation, and verify supported OBB data.</td>
+                <td>On your device in app-private working storage and through Android's installation flow.</td>
+                <td>Not uploaded to a DIY Apps Studio server or an advertising service. Temporary working files are removed after a completed operation is verified.</td>
+              </tr>
+              <tr>
+                <td>Local operation history and diagnostics</td>
+                <td>To show recent outcomes, support recovery after an interrupted operation, and explain actual errors.</td>
+                <td>On your device.</td>
+                <td>The app keeps up to 50 completed operation records and up to 300 local diagnostic events. It does not send these records to our servers.</td>
+              </tr>
+              <tr>
+                <td>IP address, approximate location inferred from IP, device and advertising identifiers, app/ad interactions, and diagnostic information</td>
+                <td>To request, deliver, measure and protect advertising; to manage consent where required.</td>
+                <td>Google services, including Google Mobile Ads SDK (AdMob) and UMP.</td>
+                <td>Google processes this information under its own policies. The app does not use custom remote analytics.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="files">
+        <h2>2. Files and installation</h2>
+        <p>The app reads only the files or folders that you choose through Android. It may process APK, XAPK, APKM, APKS and supported OBB data, together with package metadata, signing information and file hashes. This processing happens locally in app-private working storage. APKs are then passed to Android for the final system installation confirmation.</p>
+        <p>For supported packages containing OBB data, the app may copy the data to the relevant Android OBB location and verify the copied files. Replacing existing OBB data requires your approval and uses temporary local backups to make recovery possible.</p>
+        <p>We do not upload package contents, filenames, full file paths, or installation history to a DIY Apps Studio server or to an advertising service. The app does not delete your original source files. Android, your browser, and the document or cloud-storage provider you selected may handle data under their own privacy policies.</p>
+      </section>
+
+      <section id="storage">
+        <h2>3. Local records, retention and deletion</h2>
+        <p>To make installation status understandable and recover safely from interruptions, the app stores the last 50 completed operation records and up to 300 diagnostic events on your device. These records can include a filename, available package details, time, operation phase, duration, result and error information.</p>
+        <p>An unfinished recovery record and the working files needed to complete or safely resolve that operation are retained until the operation is resolved. Temporary files from a completed operation and backups of replaced OBB data are removed after verification.</p>
+        <p>Clearing the app's history removes completed operation records. It does not remove an unfinished recovery record, every diagnostic event, or a current operation. Clearing app storage or uninstalling the app removes the app's private preferences and recovery data, but it does not remove your original source files, installed apps, or OBB data that was already published to its Android location.</p>
+      </section>
+
+      <section id="ads">
+        <h2>4. Google advertising and consent</h2>
+        <p>The app uses Google Mobile Ads SDK (AdMob) to display advertising and Google User Messaging Platform (UMP) to manage consent where required. Before ads are requested, UMP asks Google whether a consent message or privacy choice is required for your device and location. The app requests ads only when UMP permits it.</p>
+        <p>According to Google's current Mobile Ads SDK disclosure, Google may automatically collect and share the device IP address, approximate location inferred from IP, device and account identifiers (including advertising ID and app set ID where applicable), app and ad interaction information, and diagnostic information. Google uses this information for advertising, analytics, measurement and fraud prevention. Data transmitted by the SDK is encrypted in transit using TLS.</p>
+        <p>Google, including its selected advertising technology providers where applicable, handles this information under Google's own policies. For more detail, see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>, and <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google's Mobile Ads SDK data disclosure</a>.</p>
+        <p>Package installation is not conditioned on an advertisement being loaded. We do not use your package files, filenames or local installation history to target advertising.</p>
+      </section>
+
+      <section id="choices">
+        <h2>5. Your choices and rights</h2>
+        <ul>
+          <li><strong>Advertising choices.</strong> Where Google requires a privacy-options entry point, you can open it from Help in the app. You can also use Google's privacy controls for Google-held data.</li>
+          <li><strong>Android controls.</strong> Android settings may let you revoke access that you granted to selected files or folders, change permission choices for this source, and reset or delete your advertising ID.</li>
+          <li><strong>Local records.</strong> You can clear completed history in the app. To remove all app-private records and preferences, clear the app's storage or uninstall the app, subject to the distinction for source files, installed apps and published OBB data explained above.</li>
+          <li><strong>Privacy requests.</strong> If you have a question about data handled by DIY Apps Studio, contact us using the address below. For data handled by Google, use Google's privacy controls or contact Google directly.</li>
+        </ul>
+        <p>Changing an ad preference does not retroactively delete information Google has already received. The availability and effect of choices may vary by Android version, region and the Google services on your device.</p>
+      </section>
+
+      <section id="security">
+        <h2>6. Security and third parties</h2>
+        <p>The app performs package structure and consistency checks to support installation. Those checks do not guarantee that a file is safe or free from malware. Install packages only from sources you trust.</p>
+        <p>The app does not request access to contacts, microphone, camera or precise location. It does not use a DIY Apps Studio account database, custom cloud storage or custom remote analytics. Google services, Android, and the file provider you choose are independent services governed by their own terms and privacy policies.</p>
+      </section>
+
+      <section id="children">
+        <h2>7. Children</h2>
+        <p>XAPK Installer is not directed to children. We do not knowingly collect personal information directly from children. If you believe a child has provided information to DIY Apps Studio, contact us. Google advertising services may apply their own age-related rules and controls.</p>
+      </section>
+
+      <section id="changes">
+        <h2>8. Changes to this policy</h2>
+        <p>We may update this policy when the app's data practices, features, or legal obligations change. We will post the revised policy at this page and update the date at the top. Please review the policy when you use a new version of the app.</p>
+      </section>
+
+      <section id="contact">
+        <h2>9. Contact</h2>
+        <p>If you have a privacy question about XAPK Installer or this policy, contact:</p>
+        <p><strong>DIY Apps Studio</strong><br><a href="mailto:diyappstudio@gmail.com">diyappstudio@gmail.com</a></p>
+        <p class="fine-print">This policy applies to XAPK Installer. It does not replace the privacy policies of Android, Google, or any file provider, browser, app store or other service you choose to use.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 DIY Apps Studio</p>
+      <p><a href="#policy">Back to top</a></p>
+    </footer>
+  </div>
+</body>
+</html>
