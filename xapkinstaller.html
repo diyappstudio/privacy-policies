@@ -243,8 +243,8 @@
     <header>
       <p class="eyebrow">XAPK Installer</p>
       <h1>Privacy Policy</h1>
-      <p class="lead">This policy explains how DIY Apps Studio handles information when you use XAPK Installer to find and select package files, install apps, and view advertising.</p>
-      <p class="updated">Last updated: September 24, 2026</p>
+      <p class="lead">This policy explains how DIY Apps Studio handles information when you use XAPK Installer to find and select package files, install apps, and manage privacy choices.</p>
+      <p class="updated">Updated: October 7, 2026</p>
       <nav aria-label="Policy sections">
         <a href="#data">Data at a glance</a>
         <a href="#files">Files and installation</a>
@@ -256,7 +256,7 @@
 
     <main id="policy">
       <div class="notice">
-        <strong>Short version:</strong> XAPK Installer processes package files and user-started shared-storage searches on your device. We do not operate an account system or upload your package contents, names, paths, scan results, or installation history to a DIY Apps Studio server, advertising service, or analytics service. The app uses Google AdMob and Google User Messaging Platform (UMP), which may process data for advertising and consent management as described below.
+        <strong>Short version:</strong> XAPK Installer processes package files and user-started shared-storage searches on your device. We do not operate an account system or upload your package contents, names, paths, scan results, or installation history to a DIY Apps Studio server, advertising service, or analytics service. Version 0.4.3 does not initialize AdMob or request or display ads. Google User Messaging Platform (UMP) may still contact Google to manage privacy choices. Earlier versions used AdMob; both cases are described below.
       </div>
 
       <div class="grid" aria-label="Privacy summary">
@@ -269,14 +269,14 @@
           <p>We do not provide a DIY Apps Studio account, cloud sync, or a custom analytics service in the app.</p>
         </article>
         <article class="card">
-          <h2>Ads use Google services</h2>
-          <p>Google AdMob and UMP may process identifiers, IP address, interaction and diagnostic data for ads, measurement, fraud prevention and consent.</p>
+          <h2>No ads in version 0.4.3</h2>
+          <p>Version 0.4.3 has no ad SDK initialization, requests or display. UMP may still contact Google for privacy choices. Earlier versions used AdMob.</p>
         </article>
       </div>
 
       <section id="data">
         <h2>1. Data at a glance</h2>
-        <p>We process information only for the functions described in this policy. The following table distinguishes the app's local processing from processing by Google advertising services.</p>
+        <p>We process information only for the functions described in this policy. The following table distinguishes the app's local processing, current UMP privacy checks, and AdMob processing in earlier versions.</p>
         <div class="table-wrap" role="region" aria-label="Data practices table" tabindex="0">
           <table>
             <thead>
@@ -308,8 +308,8 @@
               </tr>
               <tr>
                 <td>IP address, approximate location inferred from IP, device and advertising identifiers, app/ad interactions, and diagnostic information</td>
-                <td>To request, deliver, measure and protect advertising; to manage consent where required.</td>
-                <td>Google services, including Google Mobile Ads SDK (AdMob) and UMP.</td>
+                <td>In versions through 0.4.2, to request, deliver, measure and protect advertising. In version 0.4.3, UMP may contact Google to manage privacy choices; the Mobile Ads SDK is absent.</td>
+                <td>Google UMP in version 0.4.3; Google Mobile Ads SDK (AdMob) and UMP in earlier versions.</td>
                 <td>Google processes this information under its own policies. The app does not use custom remote analytics.</td>
               </tr>
             </tbody>
@@ -335,9 +335,9 @@
       </section>
 
       <section id="ads">
-        <h2>4. Google advertising and consent</h2>
-        <p>The app uses Google Mobile Ads SDK (AdMob) to display advertising and Google User Messaging Platform (UMP) to manage consent where required. Before ads are requested, UMP asks Google whether a consent message or privacy choice is required for your device and location. The app requests ads only when UMP permits it.</p>
-        <p>According to Google's current Mobile Ads SDK disclosure, Google may automatically collect and share the device IP address, approximate location inferred from IP, device and account identifiers (including advertising ID and app set ID where applicable), app and ad interaction information, and diagnostic information. Google uses this information for advertising, analytics, measurement and fraud prevention. Data transmitted by the SDK is encrypted in transit using TLS.</p>
+        <h2>4. Privacy choices and advertising in earlier versions</h2>
+        <p>Version 0.4.3 does not include the Google Mobile Ads SDK, initialize AdMob, request ads, or display them. Google User Messaging Platform (UMP) remains in the app and may contact Google to determine whether a privacy message or choice is required. Versions through 0.4.2 included AdMob and requested ads only when UMP permitted it. Users who still run those versions may continue to receive ads until they update.</p>
+        <p>For versions through 0.4.2, according to Google's Mobile Ads SDK disclosure, Google may automatically collect and share the device IP address, approximate location inferred from IP, device and account identifiers (including advertising ID and app set ID where applicable), app and ad interaction information, and diagnostic information. Google uses this information for advertising, analytics, measurement and fraud prevention. Data transmitted by the SDK is encrypted in transit using TLS.</p>
         <p>Google, including its selected advertising technology providers where applicable, handles this information under Google's own policies. For more detail, see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>, and <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google's Mobile Ads SDK data disclosure</a>.</p>
         <p>Package installation is not conditioned on an advertisement being loaded. We do not use your package files, names, paths, scan results or local installation history to target advertising.</p>
       </section>
@@ -345,7 +345,7 @@
       <section id="choices">
         <h2>5. Your choices and rights</h2>
         <ul>
-          <li><strong>Advertising choices.</strong> Where Google requires a privacy-options entry point, you can open it from Help in the app. You can also use Google's privacy controls for Google-held data.</li>
+          <li><strong>Privacy choices.</strong> Where Google requires a privacy-options entry point, you can open it from Help in the app. You can also use Google's privacy controls for Google-held data.</li>
           <li><strong>Android controls.</strong> You can revoke All files access in Android settings. You can also choose individual files or a folder without enabling a shared-storage scan. Android settings may let you revoke access that you granted to selected files or folders, change permission choices for this source, and reset or delete your advertising ID.</li>
           <li><strong>Local records.</strong> You can clear completed history in the app. To remove all app-private records and preferences, clear the app's storage or uninstall the app, subject to the distinction for source files, installed apps and published OBB data explained above.</li>
           <li><strong>Privacy requests.</strong> If you have a question about data handled by DIY Apps Studio, contact us using the address below. For data handled by Google, use Google's privacy controls or contact Google directly.</li>
