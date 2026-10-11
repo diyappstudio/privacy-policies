@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Privacy policy for SMS Restore by DIY Apps Studio, NAURAL PROJECT LTD.">
+  <title>SMS Restore — Privacy Policy</title>
+  <style>
+    :root{color-scheme:light dark;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65;color:#252236;background:#faf9ff}
+    body{margin:0}main{max-width:760px;margin:auto;padding:44px 24px 64px}h1{font-size:2rem;line-height:1.2}h2{font-size:1.25rem;line-height:1.4;margin-top:2rem}a{color:#5636ba;text-underline-offset:3px}li{margin:.5rem 0}.meta{color:#625d73}.summary{padding:18px 22px;background:#efebfa;border-radius:14px}footer{border-top:1px solid #d8d2e4;margin-top:32px;padding-top:18px;font-size:.9rem}@media(prefers-color-scheme:dark){:root{color:#eee9ff;background:#181522}a{color:#c9b7ff}.meta{color:#b9b1cb}.summary{background:#2e263e}footer{border-color:#453b55}}
+  </style>
+</head>
+<body><main>
+  <h1>SMS Restore Privacy Policy</h1>
+  <p class="meta">Effective date: 11 October 2026<br>App: SMS Restore · Android package <code>com.diyappstudio.smsrestore</code></p>
+  <p>SMS Restore is published by <strong>DIY Apps Studio</strong>, <strong>NAURAL PROJECT LTD</strong>. Contact us about privacy or support at <a href="mailto:info@nauralproject.com">info@nauralproject.com</a>. Our publisher website is <a href="https://nauralproject.com/">nauralproject.com</a>.</p>
+  <div class="summary"><p>SMS Restore backs up and restores SMS using your device and the backup location you choose. The app does not automatically upload message history to the publisher. It has no advertising, analytics, account or subscription service. Sending a new SMS while the app is your default SMS app uses your mobile carrier.</p></div>
+
+  <h2>Data the app accesses and why</h2>
+  <p>With SMS permission, SMS Restore reads SMS text, sender or recipient addresses, dates, inbox or sent status, read state and available message metadata such as sent date, subscription, delivery status, service centre and locked status. It uses these records to create backups, show and select messages from a backup, compare them with messages already on your phone, and verify restoration.</p>
+  <p>When you choose a backup file, the app reads that file and its name. It keeps encrypted private working copies, your selection, restore progress and safety copies so interrupted work can be resumed. It also keeps local settings, backup file references, destination access grants and locally protected encryption material.</p>
+  <p>If you enable daily or weekly automatic backups, the app reads accessible SMS and writes an encrypted backup to your selected folder even when the app is closed. Android controls when this work runs. You can disable automatic backups in Settings or revoke SMS or folder access in Android settings.</p>
+
+  <h2>Temporary default SMS role</h2>
+  <p>Android requires SMS Restore to be the default SMS app while it adds restored messages to Android's message storage. You choose whether to grant that role and can switch back to your usual SMS app afterward.</p>
+  <p>While selected as default, SMS Restore handles incoming SMS and MMS, including message content, sender and recipient information and MMS attachments needed to preserve a received message. Incoming data that has not been successfully saved is kept for retry rather than silently discarded. Android and your carrier perform MMS network delivery.</p>
+  <p>You can compose a new SMS or reply through Android while SMS Restore holds the default role. This sends the new message and recipient address through your mobile carrier. Carrier charges and privacy practices may apply. SMS is not protected by the app's backup encryption. Restoring historical messages never sends them to their original recipients.</p>
+  <p>The backup and restoration feature supports SMS text history. It does not back up or restore MMS attachments, RCS or other chat services, or call logs. It cannot recover deleted SMS without a backup containing those messages.</p>
+
+  <h2>Backup locations and sharing</h2>
+  <p>Backups are written only through Android's file access system to the location you select. A selected document provider may store or upload the encrypted backup under its own terms and privacy policy. The publisher does not receive the backup password or the keys needed to open your portable backup.</p>
+  <p>When you choose to export or share a backup or diagnostic report, Android asks you which app should receive it. The receiving app or service follows its own privacy policy. Sharing an encrypted backup does not reveal its message contents without the password. Do not send your backup password along with the backup.</p>
+  <p>The app has no publisher-operated cloud backup, automatic remote diagnostics or advertising data transfer. It does not use SMS data for advertising or sell your message history.</p>
+
+  <h2>Security</h2>
+  <p>Private staged message data and restore safety copies are encrypted with keys protected by Android Keystore. Portable backups use password-based authenticated encryption and a separate random data key. The app remembers protected encryption material locally so it can create scheduled backups without asking for the password each time.</p>
+  <p>Portable backups require the password on another device or after uninstalling and reinstalling. The publisher cannot reset it. Device-bound private keys do not transfer to another device or survive uninstalling the app. The release app restricts screenshots of its window; optional preview locking uses your device's authentication. These controls do not replace securing your phone, password and chosen storage provider.</p>
+  <p>MMS delivery can temporarily place an unencrypted downloaded message in the app's private cache before it is saved or retained for retry. Android's shared SMS/MMS storage, carrier delivery and data you send to another app are controlled by Android, the carrier or that app. The app's private backup encryption does not encrypt those systems.</p>
+
+  <h2>Retention and deletion</h2>
+  <ul>
+    <li>Inactive imported working copies become eligible for deletion after seven days. Completed restore records and safety copies become eligible after 30 days. Cleanup runs when the app initializes, so deletion may happen later than the eligibility date.</li>
+    <li>Unfinished or uncertain restore work, associated source and safety data, and unsaved incoming messages are retained so they can be completed or reviewed.</li>
+    <li>Temporary share exports become eligible for cache cleanup after 24 hours. Diagnostic event history is limited to 1,000 events and pruned to 30 days when a new event is recorded.</li>
+    <li>You can erase staged import data in Settings when it is not needed by an unfinished restore. You can delete an individual backup file through its backup details; this does not delete SMS on your phone.</li>
+    <li>Destination backups are not automatically deleted. Delete them in the app or with your chosen file provider. Copies already sent to another service remain subject to that service's controls.</li>
+    <li>Clearing app storage or uninstalling removes the app's private data and keys. It does not remove messages from Android's SMS/MMS storage or backups in your selected destination. Save portable backups and keep their password before doing this.</li>
+  </ul>
+  <p>There is no SMS Restore account to delete and no publisher-held message-history database. To delete messages in Android's shared messaging storage, use your usual messaging app. The publisher cannot delete carrier, recipient or external-provider copies for you.</p>
+
+  <h2>Diagnostics and support</h2>
+  <p>The local diagnostic report includes app version, Android API version, operation state, backup count and a bounded event history with feature name, time, duration, result and a message-count range. It excludes message text, addresses, passwords and file locations. A report leaves the app only if you explicitly export it and choose a recipient.</p>
+  <p>If you choose to contact our support email, we receive the information you send, including your email address. Do not send SMS contents, backup files, passwords or other sensitive information unless you decide it is necessary. Contact <a href="mailto:info@nauralproject.com">info@nauralproject.com</a> to ask about or request deletion of information you have voluntarily sent to support. This is separate from the device data described above.</p>
+
+  <h2>Changes and questions</h2>
+  <p>This policy may be updated when the app's data handling changes. The effective date identifies the current version. Privacy questions can be sent to <a href="mailto:info@nauralproject.com">info@nauralproject.com</a>.</p>
+  <footer>SMS Restore · DIY Apps Studio · NAURAL PROJECT LTD</footer>
+</main></body></html>
