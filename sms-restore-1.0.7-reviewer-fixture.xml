@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<smses count="3">
+  <sms address="LAB-REVIEW-INBOX-2" body="Authored review fixture: restore this inbox SMS from a backup." date="1791630060000" type="1" read="1" date_sent="0" sub_id="-1" status="-1" locked="0" />
+  <sms address="LAB-REVIEW-SENT-2" body="Authored historical sent SMS. Restoring this record must never send it." date="1791630120000" type="2" read="1" date_sent="1791630120000" sub_id="-1" status="0" locked="0" />
+  <sms address="LAB-REVIEW-INBOX-2" body="Authored review fixture: use this second inbox SMS for selective restoration." date="1791630180000" type="1" read="0" date_sent="0" sub_id="-1" status="-1" locked="0" />
+</smses>
