@@ -12,9 +12,9 @@
 </head>
 <body><main>
   <h1>SMS Restore Privacy Policy</h1>
-  <p class="meta">Effective date: 11 October 2026<br>App: SMS Restore · Android package <code>com.diyappstudio.smsrestore</code></p>
+  <p class="meta">Effective date: 13 October 2026<br>App: SMS Restore · Android package <code>com.diyappstudio.smsrestore</code></p>
   <p>SMS Restore is published by <strong>DIY Apps Studio</strong>, <strong>NAURAL PROJECT LTD</strong>. Contact us about privacy or support at <a href="mailto:info@nauralproject.com">info@nauralproject.com</a>. Our publisher website is <a href="https://nauralproject.com/">nauralproject.com</a>.</p>
-  <div class="summary"><p>SMS Restore backs up and restores SMS using your device and the backup location you choose. The app does not automatically upload message history to the publisher. It has no advertising, analytics, account or subscription service. Sending a new SMS while the app is your default SMS app uses your mobile carrier.</p></div>
+  <div class="summary"><p>SMS Restore backs up and restores SMS using your device and the backup location you choose. The app does not automatically upload message history to the publisher. It has no advertising, analytics, account or subscription service. SMS Restore does not send SMS.</p></div>
 
   <h2>Data the app accesses and why</h2>
   <p>With SMS permission, SMS Restore reads SMS text, sender or recipient addresses, dates, inbox or sent status, read state and available message metadata such as sent date, subscription, delivery status, service centre and locked status. It uses these records to create backups, show and select messages from a backup, compare them with messages already on your phone, and verify restoration.</p>
@@ -24,7 +24,7 @@
   <h2>Temporary default SMS role</h2>
   <p>Android requires SMS Restore to be the default SMS app while it adds restored messages to Android's message storage. You choose whether to grant that role and can switch back to your usual SMS app afterward.</p>
   <p>While selected as default, SMS Restore handles incoming SMS and MMS, including message content, sender and recipient information and MMS attachments needed to preserve a received message. Incoming data that has not been successfully saved is kept for retry rather than silently discarded. Android and your carrier perform MMS network delivery.</p>
-  <p>You can compose a new SMS or reply through Android while SMS Restore holds the default role. This sends the new message and recipient address through your mobile carrier. Carrier charges and privacy practices may apply. SMS is not protected by the app's backup encryption. Restoring historical messages never sends them to their original recipients.</p>
+  <p>SMS Restore does not request SEND_SMS and cannot send or reply to SMS. If you try to compose or reply while restoration access is active, the app explains that no message was sent and asks you to return to your usual messaging app. Restoring historical sent messages writes local history only and never sends them to their original recipients.</p>
   <p>The backup and restoration feature supports SMS text history. It does not back up or restore MMS attachments, RCS or other chat services, or call logs. It cannot recover deleted SMS without a backup containing those messages.</p>
 
   <h2>Backup locations and sharing</h2>
