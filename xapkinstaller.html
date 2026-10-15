@@ -244,11 +244,12 @@
       <p class="eyebrow">XAPK Installer</p>
       <h1>Privacy Policy</h1>
       <p class="lead">This policy explains how DIY Apps Studio handles information when you use XAPK Installer to find and select package files, install apps, and manage privacy choices.</p>
-      <p class="updated">Updated: October 7, 2026</p>
+      <p class="updated">Updated: October 15, 2026</p>
       <nav aria-label="Policy sections">
         <a href="#data">Data at a glance</a>
         <a href="#files">Files and installation</a>
         <a href="#ads">Advertising</a>
+        <a href="#diagnostics">Optional diagnostics</a>
         <a href="#choices">Your choices</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -256,7 +257,7 @@
 
     <main id="policy">
       <div class="notice">
-        <strong>Short version:</strong> XAPK Installer processes package files and user-started shared-storage searches on your device. We do not operate an account system or upload your package contents, names, paths, scan results, or installation history to a DIY Apps Studio server, advertising service, or analytics service. Version 0.4.3 does not initialize AdMob or request or display ads. Google User Messaging Platform (UMP) may still contact Google to manage privacy choices. Earlier versions used AdMob; both cases are described below.
+        <strong>Short version:</strong> XAPK Installer processes package files and user-started shared-storage searches on your device. We do not operate an account system. App-controlled telemetry does not upload package contents, names, paths, scan results or installation history. Automatic crash reports can include runtime exception messages and stack information; please read the optional diagnostics section. Versions 0.4.3 and 0.4.4 do not initialize AdMob or request or display ads. Version 0.4.4 adds optional Google Firebase diagnostics, off by default and enabled only by your choice, as described below. Google User Messaging Platform (UMP) may still contact Google to manage privacy choices. Earlier versions used AdMob; both cases are described below.
       </div>
 
       <div class="grid" aria-label="Privacy summary">
@@ -266,17 +267,17 @@
         </article>
         <article class="card">
           <h2>No account required</h2>
-          <p>We do not provide a DIY Apps Studio account, cloud sync, or a custom analytics service in the app.</p>
+          <p>We do not provide a DIY Apps Studio account or cloud sync. Version 0.4.4 offers optional Google Firebase usage, crash and performance diagnostics.</p>
         </article>
         <article class="card">
-          <h2>No ads in version 0.4.3</h2>
-          <p>Version 0.4.3 has no ad SDK initialization, requests or display. UMP may still contact Google for privacy choices. Earlier versions used AdMob.</p>
+          <h2>No ads in 0.4.3 and 0.4.4</h2>
+          <p>Versions 0.4.3 and 0.4.4 have no ad SDK initialization, requests or display. UMP may still contact Google for privacy choices. Earlier versions used AdMob.</p>
         </article>
       </div>
 
       <section id="data">
         <h2>1. Data at a glance</h2>
-        <p>We process information only for the functions described in this policy. The following table distinguishes the app's local processing, current UMP privacy checks, and AdMob processing in earlier versions.</p>
+        <p>We process information only for the functions described in this policy. The following table distinguishes local processing, optional Firebase diagnostics in version 0.4.4, UMP privacy checks, and AdMob processing in earlier versions.</p>
         <div class="table-wrap" role="region" aria-label="Data practices table" tabindex="0">
           <table>
             <thead>
@@ -310,7 +311,13 @@
                 <td>IP address, approximate location inferred from IP, device and advertising identifiers, app/ad interactions, and diagnostic information</td>
                 <td>In versions through 0.4.2, to request, deliver, measure and protect advertising. In version 0.4.3, UMP may contact Google to manage privacy choices; the Mobile Ads SDK is absent.</td>
                 <td>Google UMP in version 0.4.3; Google Mobile Ads SDK (AdMob) and UMP in earlier versions.</td>
-                <td>Google processes this information under its own policies. The app does not use custom remote analytics.</td>
+                <td>Google processes this information under its own policies. Versions through 0.4.3 do not use Firebase analytics; version 0.4.4 adds the optional diagnostics described below.</td>
+              </tr>
+              <tr>
+                <td>App usage, crash/ANR and performance information; IP address, installation/session identifiers and device details</td>
+                <td>Optional analytics and reliability/performance diagnostics in version 0.4.4, only after you enable Optional diagnostics.</td>
+                <td>Google Firebase Analytics, Crashlytics and Performance Monitoring.</td>
+                <td>Off by default. Local crash reports may be sent on later opt-in. Already uploaded data follows the service's retention and deletion controls; see the diagnostics section.</td>
               </tr>
             </tbody>
           </table>
@@ -322,7 +329,7 @@
         <p>The app reads the files and folders you select and checks shared storage when you explicitly start a scan. Selected APK, XAPK, APKM, APKS, ZIP and supported OBB files are staged locally for inspection and installation, together with package metadata, signing information and file hashes. This processing happens in app-private working storage. APKs are then passed to Android for the final system installation confirmation.</p>
         <p>On Android 11 or later, you can choose Scan device storage, read an explanation, grant Android All files access in system settings, and then start a scan. The scan checks local filenames, paths, sizes and dates to discover package files and matching OBB data. It does not inspect arbitrary file contents during discovery. It covers readable primary and mounted removable shared storage, including Downloads. Private app folders, Android/data, Android/obb, the rest of the Android folder, and cloud providers are excluded. Scanning stops when you leave its screen or put the app in the background. Cancelled or limited scans may show incomplete results. OBB suggestions require your explicit selection; matching filenames alone do not prove compatibility.</p>
         <p>For supported packages containing OBB data, the app may copy the data to the relevant Android OBB location and verify the copied files. Replacing existing OBB data requires your approval and uses temporary local backups to make recovery possible.</p>
-        <p>We do not upload package contents, package names, filenames, full file paths, scan results, or installation history to a DIY Apps Studio server, advertising service, or analytics service. The app does not delete your original source files. Android, your browser, and a document or cloud-storage provider you explicitly select through the file or folder picker may handle data under their own privacy policies.</p>
+        <p>Our app-controlled telemetry does not upload package contents, package names, filenames, full file paths, scan results or installation history. Automatic crash reports can contain runtime exception messages and stack information, as described below. The app does not delete your original source files. Android, your browser, and a document or cloud-storage provider you explicitly select through the file or folder picker may handle data under their own privacy policies.</p>
       </section>
 
       <section id="storage">
@@ -342,9 +349,19 @@
         <p>Package installation is not conditioned on an advertisement being loaded. We do not use your package files, names, paths, scan results or local installation history to target advertising.</p>
       </section>
 
+      <section id="diagnostics">
+        <h2>4a. Optional diagnostics in version 0.4.4</h2>
+        <p>Optional diagnostics are off by default. Package installation works without enabling them. If you turn on Optional diagnostics in Settings, Google Firebase Analytics, Crashlytics and Performance Monitoring process app usage, crash and performance information to help us understand usage and improve reliability and responsiveness.</p>
+        <p>This information can include automatically collected usage events, activity screen context, app/OS versions, device details, IP address (which may be used to infer approximate location), installation and session identifiers, crash/ANR stack traces and runtime exception information. These technical fields can be personal data; we do not describe them as anonymous. Firebase may derive diagnostic and session information automatically. We do not set a user ID or use these diagnostics for advertising personalization.</p>
+        <p>Our application-controlled handled-error reports remove original exception messages, causes and suppressed exceptions. Custom performance traces use stable operation names and bounded outcomes. They do not include filenames, paths, package identifiers, archive contents, installed-app inventories or arbitrary logs. Automatic fatal/ANR reports are generated by the SDK and can contain runtime exception messages and stack information that this handled-error sanitizer does not cover. Package files themselves are not uploaded.</p>
+        <p>Turning diagnostics off stops new app-authorized uploads; a transfer already in progress may complete. Crashlytics automatic report upload stays disabled: the app requests a pending-report batch only while diagnostics are enabled. Once initialized, Crashlytics may retain crash information locally even while diagnostics are off. If you enable diagnostics again, stored crash reports may be sent, including reports recorded locally during the disabled interval. Disabling diagnostics does not erase information already received by Google.</p>
+        <p>Google processes transmitted diagnostics under its own policies and applicable Firebase service terms. Network transmission uses encrypted connections. Retention and deletion depend on the service and applicable Google controls; clearing local app storage does not delete remote records. We do not offer an in-app account or promise that a local switch deletes Google-held data. For questions, use the contact below and Google's privacy controls. See <a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a> and <a href="https://firebase.google.com/docs/android/play-data-disclosure">Firebase Android data disclosure</a>.</p>
+      </section>
+
       <section id="choices">
         <h2>5. Your choices and rights</h2>
         <ul>
+          <li><strong>Optional diagnostics (0.4.4).</strong> You can enable or disable Firebase diagnostics in Settings. They are off by default, and installation does not require consent. Re-enabling can send locally buffered crash reports as explained above.</li>
           <li><strong>Privacy choices.</strong> Where Google requires a privacy-options entry point, you can open it from Help in the app. You can also use Google's privacy controls for Google-held data.</li>
           <li><strong>Android controls.</strong> You can revoke All files access in Android settings. You can also choose individual files or a folder without enabling a shared-storage scan. Android settings may let you revoke access that you granted to selected files or folders, change permission choices for this source, and reset or delete your advertising ID.</li>
           <li><strong>Local records.</strong> You can clear completed history in the app. To remove all app-private records and preferences, clear the app's storage or uninstall the app, subject to the distinction for source files, installed apps and published OBB data explained above.</li>
@@ -356,7 +373,7 @@
       <section id="security">
         <h2>6. Security and third parties</h2>
         <p>The app performs package structure and consistency checks to support installation. Those checks do not guarantee that a file is safe or free from malware. Install packages only from sources you trust.</p>
-        <p>The app does not request access to contacts, microphone, camera or precise location. It does not use a DIY Apps Studio account database, custom cloud storage or custom remote analytics. Google services, Android, and the file provider you choose are independent services governed by their own terms and privacy policies.</p>
+        <p>The app does not request access to contacts, microphone, camera or precise location. It does not use a DIY Apps Studio account database or custom cloud storage. Optional Google Firebase diagnostics in version 0.4.4 are described above. Google services, Android, and the file provider you choose are independent services governed by their own terms and privacy policies.</p>
       </section>
 
       <section id="children">
