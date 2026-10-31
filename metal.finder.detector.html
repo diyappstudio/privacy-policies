@@ -13,7 +13,7 @@
 <ul>
 <li><a href="#P3">The information processed depends on the Services and features you use.</a></li>
 <li><a href="#P2">You can email us to exercise applicable privacy rights; no particular request form is required.</a></li>
-<li><a href="#P5">Performance collection is enabled by default. An explicit diagnostics-off choice is preserved.</a></li>
+<li><a href="#P5">From 1.1.4, usage, crash and performance reports share a saved choice and default on without one. Explicit off choices are preserved.</a></li>
 <li><a href="#P6">Advertising disclosures may count as “sale” or “sharing” even though we do not exchange information for payment.</a></li>
 <li><a href="#P8">Retention depends on the purpose and applicable legal requirements.</a></li>
 <li><a href="#P11">Additional rights and procedures depend on your jurisdiction.</a></li>
@@ -190,7 +190,7 @@
 <p>The Firebase services and purposes covered here are Remote Config, data storage and processing, Crashlytics, Cloud Messaging, data encryption and security, A/B testing, in-app messaging, Analytics and Firebase Performance Monitoring. See the <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</p>
 <h3>Performance diagnostics</h3>
 <p>Firebase Performance Monitoring helps us find and resolve performance problems.</p>
-<p><strong>Your control.</strong> Performance collection is enabled by default unless you explicitly turn diagnostics off in the App’s privacy-choice controls. Your explicit choice to turn diagnostics off is preserved.</p>
+<p>Version scope and your control. In 1.1.3, crash and performance reports use a saved diagnostics choice while Analytics follows the earlier advertising-consent flow. From 1.1.4, the existing Settings control covers usage, crash and performance reports together. With no saved choice, collection is on for fresh installs and updates. Explicit saved on and off choices are preserved. Starting the app does not save a default as a user choice. Advertising eligibility does not control this collection. You can turn reporting off in Settings without losing the core features. Analytics and Performance are disabled through their collection controls; automatic Crashlytics reporting stops after the next app start. Already sent or in-flight reports cannot be recalled. Advertising purposes remain disabled in this ad-free version.</p>
 <p><strong>Performance reports.</strong> These may include app-start and foreground/background timings, screen-rendering metrics, network request URLs without query parameters or payload contents, response times, response codes and payload sizes.</p>
 <p><strong>Associated diagnostics.</strong> Reports may also include installation and session identifiers, device and operating-system details, app version, network information, resource usage and country derived from the IP address.</p>
 <p><strong>Excluded content.</strong> We do not add sensor readings or user-entered content to Performance reports.</p>
